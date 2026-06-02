@@ -12,19 +12,19 @@ const slides = [
     title: "Enterprise Technology Solutions",
     subtitle:
       "Accelerating business growth through AI, cloud technologies and digital transformation.",
-    image: "/hero/Hero1.jpg",
+    image: "/hero/hero1.jpg",
   },
   {
     title: "AI Powered Business Automation",
     subtitle:
       "Automate operations, improve efficiency and scale your business faster.",
-    image: "/hero/Hero2.jpg",
+    image: "/hero/hero2.jpg",
   },
   {
     title: "Cloud & Software Excellence",
     subtitle:
       "Building secure, scalable and future-ready digital platforms.",
-    image: "/hero/Hero3.jpg",
+    image: "/hero/hero3.jpg",
   },
 ];
 
