@@ -7,37 +7,37 @@ const industries = [
     title: "Healthcare",
     description:
       "AI-powered patient engagement, workflow automation and healthcare analytics.",
-    image: "/industries/healthcare.jpg",
+    image: "/Industries/healthcare.jpg",
   },
   {
     title: "Manufacturing",
     description:
       "Smart factory automation, predictive maintenance and Industry 4.0 solutions.",
-    image: "/industries/manufacturing.jpg",
+    image: "/Industries/manufacturing.jpg",
   },
   {
     title: "Finance",
     description:
       "Intelligent analytics, risk assessment and financial process automation.",
-    image: "/industries/finance.jpg",
+    image: "/Industries/finance.jpg",
   },
   {
     title: "Retail",
     description:
       "Customer insights, inventory optimization and AI-driven personalization.",
-    image: "/industries/retail.jpg",
+    image: "/Industries/retail.jpg",
   },
   {
     title: "Logistics",
     description:
       "Supply chain visibility, route optimization and warehouse automation.",
-    image: "/industries/logistics.jpg",
+    image: "/Industries/logistics.jpg",
   },
   {
     title: "Education",
     description:
       "Learning automation, student engagement and digital education platforms.",
-    image: "/industries/education.jpg",
+    image: "/Industries/education.jpg",
   },
 ];
 
