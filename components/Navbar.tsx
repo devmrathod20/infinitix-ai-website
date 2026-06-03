@@ -23,24 +23,61 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
         scrolled
-          ? "bg-[#050816]/95 backdrop-blur-lg shadow-lg"
+          ? "bg-[#050816]/95 backdrop-blur-lg shadow-lg border-b border-slate-800"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo */}
           <a
             href="/"
-            className="text-2xl font-bold text-white"
+            className="flex items-center gap-3 group"
           >
-            Infinitix AI
+            <img
+              src="/logo.png"
+              alt="Infinitix AI"
+              className="
+                w-12
+                h-12
+                object-contain
+                drop-shadow-[0_0_20px_rgba(59,130,246,0.35)]
+                transition-transform
+                duration-300
+                group-hover:scale-105
+              "
+            />
+
+            <div>
+              <h1
+                className="
+                text-xl
+                font-bold
+                text-white
+                leading-none
+                "
+              >
+                Infinitix AI
+              </h1>
+
+              <p
+                className="
+                text-[10px]
+                uppercase
+                tracking-[0.25em]
+                text-slate-400
+                mt-1
+                "
+              >
+                AI • Automation • Cloud
+              </p>
+            </div>
           </a>
 
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center gap-8">
-            
+
             {/* Services Mega Menu */}
             <div className="relative group">
               <button className="flex items-center gap-1 text-slate-300 hover:text-blue-400 transition">
@@ -48,7 +85,6 @@ export default function Navbar() {
                 <ChevronDown size={16} />
               </button>
 
-              {/* Mega Menu */}
               <div
                 className="
                   absolute
@@ -178,7 +214,21 @@ export default function Navbar() {
 
             <a
               href="#contact"
-              className="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg font-medium transition"
+              className="
+                bg-gradient-to-r
+                from-blue-600
+                to-cyan-500
+                hover:from-blue-500
+                hover:to-cyan-400
+                px-6
+                py-3
+                rounded-xl
+                font-medium
+                transition-all
+                duration-300
+                hover:scale-105
+                shadow-[0_0_25px_rgba(59,130,246,0.35)]
+              "
             >
               Book Consultation
             </a>
@@ -186,7 +236,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden"
+            className="lg:hidden text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -195,7 +245,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-[#0f172a] rounded-xl mb-4 p-5">
+          <div className="lg:hidden bg-[#0f172a] border border-slate-800 rounded-xl mb-4 p-5">
             <div className="flex flex-col gap-5">
 
               <a href="#services">Services</a>
@@ -206,7 +256,14 @@ export default function Navbar() {
 
               <a
                 href="#contact"
-                className="bg-blue-600 text-center py-3 rounded-lg"
+                className="
+                  bg-gradient-to-r
+                  from-blue-600
+                  to-cyan-500
+                  text-center
+                  py-3
+                  rounded-lg
+                "
               >
                 Book Consultation
               </a>
